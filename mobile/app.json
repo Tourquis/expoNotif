@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "ExpoNotif",
+    "slug": "exponotif",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mobile",
+    "scheme": "exponotif",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -52,6 +52,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0e4fa2f8-5378-47c0-adb0-df1c76938a2e"
+      }
+    },
+    "owner": "tourquis"
   }
 }
