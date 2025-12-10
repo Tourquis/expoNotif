@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Expo Push Notifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel - Expo Push Notifications</h1>
+        
+        <div class="section">
+            <h2>Envoyer une notification</h2>
+            <form id="notificationForm">
+                <div class="form-group">
+                    <label for="title">Titre:</label>
+                    <input type="text" id="title" name="title" required placeholder="Titre de la notification">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Message de la notification" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="token">Token (optionnel - laisser vide pour envoyer à tous):</label>
+                    <input type="text" id="token" name="token" placeholder="ExpoPushToken[...]">
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit" id="sendAllBtn">Envoyer à tous</button>
+                    <button type="button" id="sendOneBtn">Envoyer au token spécifique</button>
+                </div>
+            </form>
+            
+            <div id="result" class="result"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Tokens enregistrés</h2>
+            <button type="button" id="refreshTokensBtn">Rafraîchir la liste</button>
+            <div id="tokensList" class="tokens-list"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
